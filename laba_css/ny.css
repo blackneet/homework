@@ -1,0 +1,85 @@
+ul{
+	display: inline-block;
+    text-decoration: none; 
+    color: white;
+    list-style: none;
+}
+#navigation a {
+	display: block;
+	text-decoration: none;
+	color: white;
+}
+#navigation{	
+	background: url("elki.png") repeat left;
+	width: 1000px;
+	margin-left: 130px;
+	text-align: center;
+	font-size: 22px;
+	padding: 5px 20px;
+}
+nav li{
+	display:inline-block;
+    text-align: center;
+    background-color: rgba(0, 118, 0, 0.7);
+    border:1px solid green;
+    border-radius: 27px;
+    padding: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    
+}
+
+li ul{
+    position: absolute;
+    display: none; 
+   }
+ li:hover .hot,
+ li:hover .cold,
+ li:hover .keks { 
+    display: block; 
+  }
+.meat,
+.zakus,
+.zak{
+	display: none;
+	margin-left: -70px;
+}
+.hot,
+.cold,
+.keks{
+	margin-left: -150px;
+}
+.cold li:hover .zak{
+display: block;   
+}
+.hot li:hover .meat{
+	display: block;
+}
+.hot li:hover .zakus{
+	display: block;
+}
+li:hover{
+	background-color: #55bf55;
+}
+#ny{
+  font-size: 200px;
+  text-align: center;
+  color: green;
+  text-shadow: 3px 3px 5px black;
+  margin-top: 35px;
+}
+#ny a{
+	color: green;
+	text-decoration: none;
+}
+a .roj{
+	display: none;
+}
+a:hover .nov{
+	display: none;
+
+}
+a:hover .roj{
+	display: inline-block;
+
+}

@@ -1,0 +1,17 @@
+ body{
+ 	display: flex;
+ }
+
+
+ div {
+    margin: auto;
+    width: 75px; 
+    padding: 10px;
+    height: 15px;
+    border: 2px solid black;
+    outline: 2px solid red;
+    outline-offset: 25px;
+} 
+b{
+	padding: 5px;
+}

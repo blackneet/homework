@@ -1,0 +1,87 @@
+<html>
+  <head>
+  <style>
+  .animated{
+  	width: 150px;
+  	height: 150px;
+    
+  	animation-name: bgclranimate;
+  	animation-duration: 10s;
+  	animation-timing-function: linear;
+  	animation-iteration-count: infinite;
+  }
+  .shadow{
+    position: absolute;
+    margin-top: 18px;
+    width: 60px;
+    height: 60px;
+    
+    animation-name: ulitka;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes ulitka{
+    10%{
+      background-color: yellow;   
+    }
+    13%{ transform: translate( 225px, 0px);
+            }
+    23% {transform: translate( 200px, 200px);
+   
+   }
+    33% {transform: translate( 20px, 200px );
+   }
+
+    45% {transform: translate( 20px, 100px);
+   }
+    
+    55% {transform: translate( 100px, 100px);
+   }
+    65% {
+      transform: translate( 20px, 100px);
+    }
+    73%{transform: translate( 20px, 200px );
+   }
+   83%{transform: translate( 200px, 200px);   
+   }
+   93%{ transform: translate( 225px, 0px);
+        background-color: yellow;
+      }
+  }
+
+
+  @keyframes bgclranimate{
+  	0% {}
+  	
+  	10%{ transform: translate( 200px, 0px);
+  		}
+  	20% {transform: translate( 200px, 200px);
+   }
+  	30% {transform: translate( -0px, 200px );
+   }
+
+  	40% {transform: translate( 0px, 100px);
+   }
+    
+  	50% {transform: translate( 100px, 100px);
+   }
+  	60% {transform: translate( 0px, 100px)
+    }
+    70%{transform: translate( -0px, 200px );
+  }
+  80%{
+    transform: translate( 200px, 200px);
+  }
+  90%{ transform: translate( 200px, 0px);
+      }
+  </style>
+  </head>
+  <body>
+   <div class="shadow"></div>
+  <div class="animated"><img src="http://top-android.org/media/screenshots/1203-0.jpg" width="100px" height="100px"></div>
+  <div class="put">
+ 
+  </body>
+</html>

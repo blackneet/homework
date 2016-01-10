@@ -1,0 +1,30 @@
+#sad{
+	position: relative;
+}
+#face{
+	display:none; 
+}
+#face:checked + #sad:after{
+	content: '...sAd...';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: url(http://cs.pikabu.ru/images/big_size_comm/2012-12_1/13546514178992.png) no-repeat 50%;
+	height: 400px;
+	width: 400px;
+	color: grey;
+	font-weight: bold;
+	font-size: 25px;
+}
+label{
+	background: url(http://blog.salesdoubler.com.ua/wp-content/uploads/2014/10/13248337435225.jpg) no-repeat 50%;
+	color: red;
+	top: 200px;
+	height: 400px;
+	width: 400px;
+	font-style: italic;
+	padding: 200px;
+	font-size: 25px;
+}

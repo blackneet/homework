@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title> Почта ЕХ</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css " href="ex5.css">
+ </head>
+ <body>
+  <footer class="navigation">
+    <div class="menu" widht=100%>
+       <p><img src="http://www.ex.ua/i/ex-small.png" alt="EX" class="ex">-Почта</p>
+       <p>Файлы</p>
+       <p>Виделео</p>
+       <p>Аудио</p>
+      <p>Изображения</p>
+      <p>Тексты</p>
+      <p>Игры</p>
+      <p>Программы</p>
+      <p>О сервисе</p>
+      <p>Поиск</p>
+    </div>
+
+  <div class="button">  
+  <select type="text" name="language" class="language">
+    <option value="ru" selected>русский</option>
+    <option value="uk"> українська</option>
+    <option value="en">english</option>
+    <option value="es">espanol</option>
+    <option value="de">deutcsh</option>
+  </select>
+   <span class="enter">Bход</span>
+  </div> 
+ </footer>
+  <main>
+ <div class="top">
+  <div class="top-text">
+   <h3>Экспресс-файлы — сервис обмена информацией</h3>
+   <p>Вы можете анонимно воспользоваться сервисом хранения, пересылки и обмена файлов, в<br> этом случае доступ к объекту будет возможен только с помощью ключа, который Вы получите <br> при создании объекта.</p>
+  </div>
+ 
+  <div class="button2">
+    <input type="submit" name="create1" value="coздать"> 
+    <input type="text" name="mail" pattern=[0-9]{12}>
+    <input type="submit" name="resive" value="получить">
+  </div>
+  </div>
+<div class="img">
+    <img src="ex.png">
+</div>
+
+  <div class="bottom">
+   <div class="express">
+    <h3>Экспресс-письмо</h3>
+    <p>Если получатель не зарегистрирован в системе, сообщение всё равно будет доставлено.<br>
+       На указанный номер телефона будет выслана SMS с информацией о доступе к аккаунту.</p> 
+     <input type="text" name="massage" placeholder="Сообщение">
+  </div>
+  <div class="exmail">
+    <h3>Экспресс-регистрация в EXMAIL</h3>
+     <p>Чтобы создать почтовый ящик на ex.ua, достаточно<br> лишь указать свой номер телефона</p> 
+    <input type="text" placeholder="+380 39 123 45 67" name="number" required> 
+    <span>@ex.ua</span>
+    <input type="submit" name="create2" value="coздать">
+  </div>
+  </div>
+  </main>
+  </body>
+</html>

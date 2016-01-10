@@ -1,0 +1,23 @@
+@base-color: #ff4136;
+@w:@widht;
+@widht: 20px;
+.exam-box{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	border-color: @base-color;
+}
+div > div{
+	height: @w+15;
+	width: @w;
+	padding: @w*2;
+	border-radius: @w*1.5;
+}
+
+.generate-stairs(@n) when (@n > 0) {
+    .stair-@{n}{
+        background-color: spin(@base-color, @n * -5);
+        }
+    .generate-stairs(@n - 1);
+}
+.generate-stairs(10);

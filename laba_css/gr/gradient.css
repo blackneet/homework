@@ -1,0 +1,42 @@
+.exam-box {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-color: #ff4136;
+}
+div > div {
+  height: 35px;
+  width: 20px;
+  padding: 40px;
+  border-radius: 30px;
+}
+.stair-10 {
+  background-color: #ff36d3;
+}
+.stair-9 {
+  background-color: #ff36c2;
+}
+.stair-8 {
+  background-color: #ff36b1;
+}
+.stair-7 {
+  background-color: #ff36a0;
+}
+.stair-6 {
+  background-color: #ff3690;
+}
+.stair-5 {
+  background-color: #ff367f;
+}
+.stair-4 {
+  background-color: #ff366e;
+}
+.stair-3 {
+  background-color: #ff365d;
+}
+.stair-2 {
+  background-color: #ff364c;
+}
+.stair-1 {
+  background-color: #ff363c;
+}

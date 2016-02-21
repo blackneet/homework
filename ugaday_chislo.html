@@ -1,0 +1,102 @@
+
+<html>
+    <head>
+        <title>
+            Guess the number
+        </title>
+        <meta charset="utf-8">
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background-image: linear-gradient(to right, #730099,#ecb3ff ,#ecb3ff , #730099)
+            }
+            #num{
+                font-size: 36px;
+                border: 2px solid #85144B;
+                border-radius: 5px;
+                width: 100px;
+                padding: 10px;
+
+            }
+            #button,
+            #restart{
+                margin-top: 20px;
+                margin-left:-40px;
+                text-decoration:none; text-align:center;
+                padding:16px 30px;
+                border:double 2px #b9a1c9;
+                border-radius: 29px;
+                font:22px Georgia, "Times New Roman", Times, serif;
+                font-weight:bold;
+                color:#ffffff;
+                background-color:#56006b;
+                background-image: -moz-linear-gradient(top, #a43ea8 0%, #56006b 100%);
+                background-image: -webkit-linear-gradient(top, #a43ea8 0%, #56006b 100%);
+                background-image: -o-linear-gradient(top, #a43ea8 0%, #56006b 100%);
+                background-image: -ms-linear-gradient(top, #a43ea8 0%, #56006b 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a43ea8', endColorstr='#a43ea8',GradientType=0 );
+                background-image: linear-gradient(top, #a43ea8 0%, #56006b 100%);
+                box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+
+            }
+            #demo{
+                font-size: 34px;
+                color: #ff004b;
+                margin-left: -40px;
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1 id= 'text'> Выбери и запиши число</h1>
+        <form id="forms">
+            <input type="number" id="num" max="100" min="0"><br>
+            <button type="button" id="button"> Угадал(а)?</button>
+
+        </form>
+
+        <i><b id = "demo"> </b></i>
+        <form>
+                <button id="restart">Может заново?</button>
+        </form>
+    <script>
+        var random = parseInt(Math.random()*100 + 1);
+        console.log(random);
+
+        var leg = [];
+
+        var button = document.getElementById("button");
+        button.addEventListener('click' ,function event(){
+            var getSend =document.getElementById('text');
+            getSend.addEventListener('',function(event){
+                event.preventDefault()
+            });
+            var user = document.getElementById('num').value;
+            var userChoice = Number(user);
+
+
+                if (random > userChoice) {
+                    document.getElementById('demo').innerHTML = "Пробуй больше";
+
+                } else if (random < userChoice) {
+                    document.getElementById('demo').innerHTML = "Пробуй меньше";
+
+                } else if (random === userChoice) {
+                    document.getElementById('demo').innerHTML = "В точку!";
+
+                   } else {
+                    alert("error");
+                }
+
+        });
+        document.getElementById('restart').addEventListener("click",function(){});
+
+    </script>
+    </body>
+</html>
+
+
